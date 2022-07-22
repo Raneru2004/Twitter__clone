@@ -1,0 +1,15 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  --twitter-color:#50b7f5;
+  --twitter-background: #e6ecf0;
+ 
+}
+
+.App{
+  display: flex;
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1400px;
+}

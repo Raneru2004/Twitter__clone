@@ -1,0 +1,77 @@
+
+.widgets{
+    position: fixed;
+    width:360px ;
+    
+    margin-left: 66.3%;
+    height: 100%;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow: scroll;
+   
+    
+    
+}
+.widgets::-webkit-scrollbar{
+    display: none;
+}
+.widgets__input--wrapper{
+    position: fixed;
+    width: 100%;
+    padding:44px 0px;
+    background-color: white;
+    margin-left: 18px;
+   
+}
+.widgets__input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 305px;
+    top:15px;
+    z-index: 100;
+    background-color: #e6ecf0;
+    border-radius: 30px;
+    padding: 15px 20px;
+   
+    
+}
+.widgets__input > input {
+    border: none;
+    background-color: #e6ecf0;
+    width: 100%;
+    z-index: 10000;
+}
+.widgets__searchIcon{
+    color: gray;
+}
+.widgets__widgetContainer{
+    width: 300px !important;
+    margin-top: 100px;
+    margin-left: 20px;
+    padding:20px 20px;
+    background-color: #f5f8fa;
+    border-radius: 20px; 
+   
+}
+.tweet__widget{
+    width:100%;
+}
+.share__button{
+    margin-top: 12px;
+}
+.widgets__widgetContainer > h2 {
+    font-size: 18px;
+    font-weight: 800;
+}
+@media(max-width:1300px){
+    .widgets{
+        margin-left: 63%;
+    }
+}
+@media(max-width:1020px){
+    .widgets{
+        display: none;
+    }
+}

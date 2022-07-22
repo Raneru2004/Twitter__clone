@@ -1,0 +1,107 @@
+.sidebar__wrapper{
+    height: 100vh;
+    position: sticky;
+    margin-top: 12px;
+    margin-left: 3%;
+    padding: 12px;
+    padding-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 2;
+    
+   
+
+}
+.sidebar__twitterIcon{
+    color: var(--twitter-color);
+    font-size: 25px !important;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    transform: translateX(-7px);
+
+}
+
+
+.sidebar__tweet{
+    background-color: var( --twitter-color) !important;
+    border: none !important;
+    color: white !important;
+    font-weight: 900 !important;
+    text-transform: inherit !important;
+    border-radius: 30px !important;
+    width:100%;
+    height: 50px !important;
+    margin-top: 20px !important;
+}
+.sidebar__tweet--plus{
+    background-color: var( --twitter-color) !important;
+    margin-top: 20px !important;
+    color: white !important;
+    padding: 18px !important;
+    border-radius: 40px !important;
+    display: none !important;
+    
+}
+.sidebar__avatar--wrapper{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:28px 16px;
+    
+}
+.sidebar__tweet--plus:hover {
+    background-color: #15a0f7 !important;
+}
+.grey{
+    color: gray;
+}
+.bold{
+    font-weight: 650;
+}
+.bio{
+    display: flex;
+    align-items: center;
+    
+}
+.bio__text{
+    font-size: 16px;
+    padding: 0 8px;
+}
+
+
+@media(max-width:1300px){
+    .sidebar{
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+    .sidebar__wrapper{
+        width:70px;
+        align-items: center;
+        margin-left: 44px;
+    }
+    .sidebar__tweet{
+        display: none !important;
+    }
+    .sidebar__tweet--plus{
+        display: flex !important;
+    }
+    .bio__text,
+    .sidebar__avatar--options{
+        display: none;
+    }
+}
+@media(max-width:660px){
+    .sidebar__wrapper{
+        display: none;
+    }
+}

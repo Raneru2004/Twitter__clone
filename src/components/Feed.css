@@ -1,0 +1,227 @@
+.feed__wrapper{
+   width: 47%;
+   
+}
+
+.feed{
+    margin-left: 45%;
+    width: 100%;
+    border-right: 1px solid #e6ecf0;
+    border-left: 1px solid #e6ecf0;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    
+}
+.feed__body{
+    margin-top: 80px;
+}
+
+.feed::-webkit-scrollbar{
+    display: none;
+}
+
+.feed__header{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 14px;
+    position: fixed;
+    z-index: 99;
+    background-color: #ffffff;
+    opacity: 0.96;
+    width: 41%;
+}
+ 
+.feed__header > h2 {
+    font-size: 20px;
+    font-weight: 800;
+}
+.post__header--special{
+    font-weight: 600;
+    font-size: 12px;
+    color: gray;
+}
+.tweet--plus{
+    width: 70px !important;
+    height: 70px !important;
+    font-size: 32px !important;
+    border-radius: 50% !important;
+    border: none !important;
+    background-color: #242424 !important;
+    color: #fff !important;
+    position: fixed !important;
+    bottom: 50px !important;
+    right:40px !important;
+    z-index: 1000 !important;
+    box-shadow: 0 12px 30px 0 rgb(0,0,0,0.28) !important; 
+    display: none !important;
+}
+.click{
+    transition: all 300ms ease !important;
+    cursor: pointer;
+}
+
+.click:hover {
+    transform: scale(1.1);
+}
+
+.click:active {
+    transform: scale(0.8);
+}
+.tweet--plus:hover {
+    background-color: #15a0f7 !important;
+}
+
+
+.menuItem--wrapper{
+    filter: invert();
+}
+
+/* .btnTweetBox__wrapper{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    width:100%;
+    max-width: 1100px;
+    height:700px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    visibility: hidden;
+    z-index: -1;
+    background-color: #111;
+    transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
+} */
+
+.btnTweetBox__wrapper{
+    top: 10px;
+    z-index: 100; width: 95%;
+    position: absolute;
+    display: flex;
+    background-color: #111;
+    align-items: center;
+    justify-content: center;
+    height: 92vh;
+    border-radius: 20px;
+} 
+.btnTweetBox{
+    padding-bottom: 10px;
+    padding-right: 10px;
+    height: 80vh;
+    width: 85vw;
+    
+}
+
+.btnTweetBox > form{
+    display: flex;
+    flex-direction: column;
+    background-color: #111;
+}
+.btnTweetBox__input{
+    padding: 20px;
+    display: flex;
+    background-color: #111;
+}
+
+.btnTweetBox__input > input {
+    flex:1;
+    margin-left: 20px;
+    font-size: 20px;
+    border: none;
+    background-color: #111;
+}
+
+.btnTweetBox__inputImage{
+    border: none;
+    padding: 10px;
+    background-color: #111;
+} 
+
+.btnTweetBox__tweet--button{
+    background-color: var( --twitter-color) !important;
+    border: none !important;
+    color: white !important;
+    font-weight: 900 !important;
+    text-transform: inherit !important;
+    border-radius: 30px !important;
+    height: 50px !important;
+    width:80px;
+    margin-top: 20px !important;
+    margin-left: auto !important;
+    margin-right: 12px !important;
+    
+   
+}
+.close__button--wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    
+}
+.close__button{
+    
+    color: white !important;
+    transition: all 300ms ease;
+    background-color: #111;
+
+}
+.close__button:hover {
+    transform: scale(1.1);
+    background-color: #111;
+}
+.close__button:active{
+    transform:scale(0.9);
+}
+@media(max-width:1300px){
+    .feed__wrapper{
+        width: 50%;
+    }
+    .feed{
+        margin-left: 150px;
+        
+    }
+    
+}
+@media(max-width:1020px){
+   .feed__wrapper{
+    width: 75%;
+   }
+   .feed__header{
+    width: 70%;
+   }
+   
+}
+@media(max-width:660px){
+    .feed__wrapper{
+        margin-bottom: 34px;
+    }
+    .feed{
+        width: 130%;
+        margin:0 auto;
+        border: none;
+    }
+    .feed__header{
+        width: 90%;
+    }
+    .tweet--plus{
+        display: block !important;
+    }
+    .menuBar--wrapper{
+        display:block !important ;
+        width: 100% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-around !important;
+        position: fixed !important;
+        z-index: 100 !important;
+        bottom: 0 !important;
+        background-color: #111;
+        padding: 8px 0;
+        border-top: 1px solid rgb(152, 152, 152);
+        left: 0 !important;
+    }
+  
+   
+}
